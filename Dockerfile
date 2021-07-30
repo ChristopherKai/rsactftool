@@ -8,7 +8,6 @@ RUN sudo apt-get update -y && \
 
 WORKDIR RsaCtfTool
 
-RUN sage -sh -c 'pip install -r requirements.txt -r optional-requirements.txt'\
-    && pip install ipython
+RUN sage -sh -c 'pip install -r requirements.txt -r optional-requirements.txt'
 
 CMD [ "/bin/bash" ]
