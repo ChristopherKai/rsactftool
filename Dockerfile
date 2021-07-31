@@ -9,5 +9,6 @@ RUN sudo apt-get update -y && \
 WORKDIR RsaCtfTool
 
 RUN sage -sh -c 'pip install -r requirements.txt -r optional-requirements.txt'
+RUN pip3 install libnum
 
 CMD [ "/bin/bash" ]
